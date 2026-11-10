@@ -32,7 +32,8 @@ app.get('/open', (req, res) => {
    
 })
 
-app.listen(5051);
+const PORT = process.env.PORT || 5051;
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 
 
 
